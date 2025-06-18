@@ -1,0 +1,119 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100px;
+}
+
+.controls-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#startButton:hover {
+    background-color: #45a049;
+}
+
+#stopButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#stopButton:hover {
+    background-color: #da190b;
+}
+
+#stopButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.precision-container {
+    margin-top: 20px;
+}
+
+.precision-container label {
+    font-size: 1.1em;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.precision-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    margin: 0 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    vertical-align: middle;
+}
+
+.precision-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.precision-btn.active {
+    background-color: #2196F3;
+    color: white;
+    border-color: #2196F3;
+}
+
+.display-container {
+    margin-top: 30px;
+}
+
+#moneyDisplay {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 250px;
+    display: inline-block;
+} 

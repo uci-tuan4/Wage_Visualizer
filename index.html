@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wage Visualizer</h1>
+        <div class="input-container">
+            <label for="wage">Enter your hourly wage:</label>
+            <input type="number" id="wage" placeholder="e.g., 20" step="0.01">
+        </div>
+        <div class="controls-container">
+            <button id="startButton">Start</button>
+            <button id="stopButton" disabled>Stop</button>
+        </div>
+        <div class="precision-container">
+            <label>Precision:</label>
+            <button id="normalPrecision" class="precision-btn active">Normal (2)</button>
+            <button id="precisePrecision" class="precision-btn">Precise (4)</button>
+        </div>
+        <div class="display-container">
+            <h2>Money Earned:</h2>
+            <p id="moneyDisplay">$0.00</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
